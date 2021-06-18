@@ -80,7 +80,7 @@ namespace DiceRoller_Randomizer.Forms
             for (int i = 0; i < numberOfDice; i++)
             {
                 pictureBoxes[i] = new PictureBox();
-                pictureBoxes[i].Image = Image.FromFile("Dice\\dice-" + "1" + ".png");
+                pictureBoxes[i].Image = Image.FromFile(@"Resources\dice-" + "1" + ".png");
                 pictureBoxes[i].SizeMode = PictureBoxSizeMode.Zoom;
                 flowLayoutPanel.Controls.Add(pictureBoxes[i]);
 
@@ -123,7 +123,7 @@ namespace DiceRoller_Randomizer.Forms
             for (int i = 0; i < numberOfDice; i++)
             {
                 dice = rnd.Next(1, 7);
-                pictureBoxes[i].Image = Image.FromFile("Dice\\dice-" + dice.ToString() + ".png");
+                pictureBoxes[i].Image = Image.FromFile(@"Resources\dice-" + dice.ToString() + ".png");
                 pictureBoxes[i].Tag = dice.ToString();
             }  
             counter++;
@@ -144,7 +144,7 @@ namespace DiceRoller_Randomizer.Forms
             for (int i = 0; i < numberOfDice; i++)
             {
                 dice = rnd.Next(1, 7);
-                pictureBoxes[i].Image = Image.FromFile("Dice\\dice-" + dice.ToString() + ".png");
+                pictureBoxes[i].Image = Image.FromFile(@"Resources\dice-" + dice.ToString() + ".png");
                 pictureBoxes[i].Tag = dice.ToString();
                 throws.Add(Convert.ToInt32(dice));
             }

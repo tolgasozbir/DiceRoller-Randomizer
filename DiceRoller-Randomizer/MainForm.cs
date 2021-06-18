@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -74,7 +75,7 @@ namespace DiceRoller_Randomizer
         private void btnRolld4_Click(object sender, EventArgs e)
         {
             formDnD = new FormDnD(1, 4);
-            formDnD.pictureBox1.Image = Image.FromFile("dndDices\\d4_roll.png");
+            formDnD.pictureBox1.Image = Image.FromFile(@"Resources\d4_roll.png");
             formDnD.lblDiceNumber.Location = new Point(235, 95);
             openForm(formDnD);
             hideSubMenu();
@@ -83,7 +84,7 @@ namespace DiceRoller_Randomizer
         private void btnRolld6_Click(object sender, EventArgs e)
         {
             formDnD = new FormDnD(1, 6);
-            formDnD.pictureBox1.Image = Image.FromFile("dndDices\\d6_roll.png");
+            formDnD.pictureBox1.Image = Image.FromFile(@"Resources\d6_roll.png");
             formDnD.lblDiceNumber.Location = new Point(226, 55);
             formDnD.lblDiceNumber.Height = 52;
             openForm(formDnD);
@@ -93,7 +94,7 @@ namespace DiceRoller_Randomizer
         private void btnRolld8_Click(object sender, EventArgs e)
         {
             formDnD = new FormDnD(1, 8);
-            formDnD.pictureBox1.Image = Image.FromFile("dndDices\\d8_roll.png");
+            formDnD.pictureBox1.Image = Image.FromFile(@"Resources\d8_roll.png");
             formDnD.lblDiceNumber.Location = new Point(235, 75);
             openForm(formDnD);
             hideSubMenu();
@@ -102,7 +103,7 @@ namespace DiceRoller_Randomizer
         private void btnRolld10_Click(object sender, EventArgs e)
         {
             formDnD = new FormDnD(1, 10);
-            formDnD.pictureBox1.Image = Image.FromFile("dndDices\\d10_roll.png");
+            formDnD.pictureBox1.Image = Image.FromFile(@"Resources\d10_roll.png");
             formDnD.lblDiceNumber.Location = new Point(226, 78);
             formDnD.lblDiceNumber.Width = 54;
             formDnD.lblDiceNumber.Height = 30;
@@ -114,7 +115,7 @@ namespace DiceRoller_Randomizer
         private void btnRolld12_Click(object sender, EventArgs e)
         {
             formDnD = new FormDnD(1, 12);
-            formDnD.pictureBox1.Image = Image.FromFile("dndDices\\d12_roll.png");
+            formDnD.pictureBox1.Image = Image.FromFile(@"Resources\d12_roll.png");
             formDnD.lblDiceNumber.Location = new Point(205, 84);
             formDnD.lblDiceNumber.Width = 55;
             formDnD.lblDiceNumber.Height = 48;
@@ -126,7 +127,7 @@ namespace DiceRoller_Randomizer
         private void btnRolld20_Click(object sender, EventArgs e)
         {
             formDnD = new FormDnD(1, 20);
-            formDnD.pictureBox1.Image = Image.FromFile("dndDices\\d20_roll.png");
+            formDnD.pictureBox1.Image = Image.FromFile(@"Resources\d20_roll.png");
             formDnD.lblDiceNumber.Location = new Point(222, 88);
             formDnD.lblDiceNumber.Width = 55;
             formDnD.lblDiceNumber.Height = 34;
@@ -138,7 +139,7 @@ namespace DiceRoller_Randomizer
         private void btnRolld100_Click(object sender, EventArgs e)
         {
             formDnD = new FormDnD(1, 100);
-            formDnD.pictureBox1.Image = Image.FromFile("dndDices\\d100_roll.gif");
+            formDnD.pictureBox1.Image = Image.FromFile(@"Resources\d100_roll.gif");
             formDnD.lblDiceNumber.Location = new Point(213, 89);
             formDnD.lblDiceNumber.Width = 75;
             formDnD.lblDiceNumber.Height = 34;

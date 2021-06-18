@@ -19,10 +19,6 @@ namespace DiceRoller_Randomizer
             _min = min;
         }
 
-        private void FormDnD_Load(object sender, EventArgs e)
-        {
-        }
-
         int count = 0;
         Random rnd = new Random();
         int dice;
