@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace DiceRoller_Randomizer
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
         }
@@ -185,7 +185,7 @@ namespace DiceRoller_Randomizer
 
         private void btnInfo_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Thx For Using This App\n\nTolga Sözbir.","They See Me Rollin");
+            MessageBox.Show("Thx For Using This App\n\nTolga Sözbir.","They See Me Rollin..");
         }
     }
 }

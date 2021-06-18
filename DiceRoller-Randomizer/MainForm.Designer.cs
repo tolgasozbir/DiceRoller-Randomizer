@@ -1,6 +1,6 @@
 ﻿namespace DiceRoller_Randomizer
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,19 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.panelLogo = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelDnDDicesSubMenu = new System.Windows.Forms.Panel();
-            this.panelSideMenu = new System.Windows.Forms.Panel();
-            this.panelCreateSubMenu = new System.Windows.Forms.Panel();
-            this.panelContent = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnExit = new System.Windows.Forms.Button();
-            this.btnGenerateNumber = new System.Windows.Forms.Button();
-            this.BtnRandomizer = new System.Windows.Forms.Button();
-            this.btnRollBasicDice = new System.Windows.Forms.Button();
-            this.btnCreate = new System.Windows.Forms.Button();
             this.btnRolld100 = new System.Windows.Forms.Button();
             this.btnRolld20 = new System.Windows.Forms.Button();
             this.btnRolld12 = new System.Windows.Forms.Button();
@@ -48,16 +40,24 @@
             this.btnRolld8 = new System.Windows.Forms.Button();
             this.btnRolld6 = new System.Windows.Forms.Button();
             this.btnRolld4 = new System.Windows.Forms.Button();
+            this.panelSideMenu = new System.Windows.Forms.Panel();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.panelCreateSubMenu = new System.Windows.Forms.Panel();
+            this.btnGenerateNumber = new System.Windows.Forms.Button();
+            this.BtnRandomizer = new System.Windows.Forms.Button();
+            this.btnRollBasicDice = new System.Windows.Forms.Button();
+            this.btnCreate = new System.Windows.Forms.Button();
             this.btnDndDices = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panelContent = new System.Windows.Forms.Panel();
             this.btnInfo = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelLogo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panelDnDDicesSubMenu.SuspendLayout();
             this.panelSideMenu.SuspendLayout();
             this.panelCreateSubMenu.SuspendLayout();
             this.panelContent.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panelLogo
@@ -80,6 +80,17 @@
             this.label1.Text = "     Roll Dice";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox2.Image = global::DiceRoller_Randomizer.Properties.Resources.logo;
+            this.pictureBox2.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(214, 45);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
             // panelDnDDicesSubMenu
             // 
             this.panelDnDDicesSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
@@ -95,150 +106,6 @@
             this.panelDnDDicesSubMenu.Name = "panelDnDDicesSubMenu";
             this.panelDnDDicesSubMenu.Size = new System.Drawing.Size(229, 280);
             this.panelDnDDicesSubMenu.TabIndex = 2;
-            // 
-            // panelSideMenu
-            // 
-            this.panelSideMenu.AutoScroll = true;
-            this.panelSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(20)))), ((int)(((byte)(32)))));
-            this.panelSideMenu.Controls.Add(this.btnExit);
-            this.panelSideMenu.Controls.Add(this.panelCreateSubMenu);
-            this.panelSideMenu.Controls.Add(this.btnCreate);
-            this.panelSideMenu.Controls.Add(this.panelDnDDicesSubMenu);
-            this.panelSideMenu.Controls.Add(this.btnDndDices);
-            this.panelSideMenu.Controls.Add(this.panelLogo);
-            this.panelSideMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelSideMenu.Location = new System.Drawing.Point(0, 0);
-            this.panelSideMenu.Name = "panelSideMenu";
-            this.panelSideMenu.Size = new System.Drawing.Size(250, 553);
-            this.panelSideMenu.TabIndex = 0;
-            // 
-            // panelCreateSubMenu
-            // 
-            this.panelCreateSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
-            this.panelCreateSubMenu.Controls.Add(this.btnGenerateNumber);
-            this.panelCreateSubMenu.Controls.Add(this.BtnRandomizer);
-            this.panelCreateSubMenu.Controls.Add(this.btnRollBasicDice);
-            this.panelCreateSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelCreateSubMenu.Location = new System.Drawing.Point(0, 470);
-            this.panelCreateSubMenu.Name = "panelCreateSubMenu";
-            this.panelCreateSubMenu.Size = new System.Drawing.Size(229, 130);
-            this.panelCreateSubMenu.TabIndex = 4;
-            // 
-            // panelContent
-            // 
-            this.panelContent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.panelContent.Controls.Add(this.btnInfo);
-            this.panelContent.Controls.Add(this.pictureBox1);
-            this.panelContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContent.Location = new System.Drawing.Point(250, 0);
-            this.panelContent.Name = "panelContent";
-            this.panelContent.Size = new System.Drawing.Size(682, 553);
-            this.panelContent.TabIndex = 2;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.Image = global::DiceRoller_Randomizer.Properties.Resources.gifLogo;
-            this.pictureBox1.Location = new System.Drawing.Point(170, 159);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(341, 235);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnExit
-            // 
-            this.btnExit.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Font = new System.Drawing.Font("MV Boli", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
-            this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExit.Location = new System.Drawing.Point(0, 600);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnExit.Size = new System.Drawing.Size(229, 45);
-            this.btnExit.TabIndex = 5;
-            this.btnExit.Text = "Exit";
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // btnGenerateNumber
-            // 
-            this.btnGenerateNumber.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnGenerateNumber.FlatAppearance.BorderSize = 0;
-            this.btnGenerateNumber.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGenerateNumber.ForeColor = System.Drawing.Color.LightGray;
-            this.btnGenerateNumber.Image = global::DiceRoller_Randomizer.Properties.Resources.rng;
-            this.btnGenerateNumber.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGenerateNumber.Location = new System.Drawing.Point(0, 80);
-            this.btnGenerateNumber.Name = "btnGenerateNumber";
-            this.btnGenerateNumber.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnGenerateNumber.Size = new System.Drawing.Size(229, 42);
-            this.btnGenerateNumber.TabIndex = 2;
-            this.btnGenerateNumber.Text = "        Random Numbers";
-            this.btnGenerateNumber.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGenerateNumber.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnGenerateNumber.UseVisualStyleBackColor = true;
-            this.btnGenerateNumber.Click += new System.EventHandler(this.btnGenerateNumber_Click);
-            // 
-            // BtnRandomizer
-            // 
-            this.BtnRandomizer.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnRandomizer.FlatAppearance.BorderSize = 0;
-            this.BtnRandomizer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnRandomizer.ForeColor = System.Drawing.Color.LightGray;
-            this.BtnRandomizer.Image = global::DiceRoller_Randomizer.Properties.Resources.card_random__1_;
-            this.BtnRandomizer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnRandomizer.Location = new System.Drawing.Point(0, 40);
-            this.BtnRandomizer.Name = "BtnRandomizer";
-            this.BtnRandomizer.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.BtnRandomizer.Size = new System.Drawing.Size(229, 40);
-            this.BtnRandomizer.TabIndex = 1;
-            this.BtnRandomizer.Text = "        Randomizer";
-            this.BtnRandomizer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnRandomizer.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnRandomizer.UseVisualStyleBackColor = true;
-            this.BtnRandomizer.Click += new System.EventHandler(this.BtnRandomizer_Click);
-            // 
-            // btnRollBasicDice
-            // 
-            this.btnRollBasicDice.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnRollBasicDice.FlatAppearance.BorderSize = 0;
-            this.btnRollBasicDice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRollBasicDice.ForeColor = System.Drawing.Color.LightGray;
-            this.btnRollBasicDice.Image = global::DiceRoller_Randomizer.Properties.Resources.RollDiceCup;
-            this.btnRollBasicDice.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRollBasicDice.Location = new System.Drawing.Point(0, 0);
-            this.btnRollBasicDice.Name = "btnRollBasicDice";
-            this.btnRollBasicDice.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnRollBasicDice.Size = new System.Drawing.Size(229, 40);
-            this.btnRollBasicDice.TabIndex = 0;
-            this.btnRollBasicDice.Text = "       Roll Basic Dice";
-            this.btnRollBasicDice.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRollBasicDice.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnRollBasicDice.UseVisualStyleBackColor = true;
-            this.btnRollBasicDice.Click += new System.EventHandler(this.btnRollBasicDice_Click);
-            // 
-            // btnCreate
-            // 
-            this.btnCreate.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCreate.FlatAppearance.BorderSize = 0;
-            this.btnCreate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCreate.Font = new System.Drawing.Font("MV Boli", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCreate.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnCreate.Image = global::DiceRoller_Randomizer.Properties.Resources.createDices;
-            this.btnCreate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCreate.Location = new System.Drawing.Point(0, 425);
-            this.btnCreate.Name = "btnCreate";
-            this.btnCreate.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnCreate.Size = new System.Drawing.Size(229, 45);
-            this.btnCreate.TabIndex = 3;
-            this.btnCreate.Text = "   Create";
-            this.btnCreate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCreate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCreate.UseVisualStyleBackColor = true;
-            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
             // btnRolld100
             // 
@@ -380,6 +247,128 @@
             this.btnRolld4.UseVisualStyleBackColor = true;
             this.btnRolld4.Click += new System.EventHandler(this.btnRolld4_Click);
             // 
+            // panelSideMenu
+            // 
+            this.panelSideMenu.AutoScroll = true;
+            this.panelSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(20)))), ((int)(((byte)(32)))));
+            this.panelSideMenu.Controls.Add(this.btnExit);
+            this.panelSideMenu.Controls.Add(this.panelCreateSubMenu);
+            this.panelSideMenu.Controls.Add(this.btnCreate);
+            this.panelSideMenu.Controls.Add(this.panelDnDDicesSubMenu);
+            this.panelSideMenu.Controls.Add(this.btnDndDices);
+            this.panelSideMenu.Controls.Add(this.panelLogo);
+            this.panelSideMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelSideMenu.Location = new System.Drawing.Point(0, 0);
+            this.panelSideMenu.Name = "panelSideMenu";
+            this.panelSideMenu.Size = new System.Drawing.Size(250, 553);
+            this.panelSideMenu.TabIndex = 0;
+            // 
+            // btnExit
+            // 
+            this.btnExit.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Font = new System.Drawing.Font("MV Boli", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
+            this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExit.Location = new System.Drawing.Point(0, 600);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnExit.Size = new System.Drawing.Size(229, 45);
+            this.btnExit.TabIndex = 5;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // panelCreateSubMenu
+            // 
+            this.panelCreateSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.panelCreateSubMenu.Controls.Add(this.btnGenerateNumber);
+            this.panelCreateSubMenu.Controls.Add(this.BtnRandomizer);
+            this.panelCreateSubMenu.Controls.Add(this.btnRollBasicDice);
+            this.panelCreateSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelCreateSubMenu.Location = new System.Drawing.Point(0, 470);
+            this.panelCreateSubMenu.Name = "panelCreateSubMenu";
+            this.panelCreateSubMenu.Size = new System.Drawing.Size(229, 130);
+            this.panelCreateSubMenu.TabIndex = 4;
+            // 
+            // btnGenerateNumber
+            // 
+            this.btnGenerateNumber.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnGenerateNumber.FlatAppearance.BorderSize = 0;
+            this.btnGenerateNumber.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenerateNumber.ForeColor = System.Drawing.Color.LightGray;
+            this.btnGenerateNumber.Image = global::DiceRoller_Randomizer.Properties.Resources.rng;
+            this.btnGenerateNumber.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGenerateNumber.Location = new System.Drawing.Point(0, 80);
+            this.btnGenerateNumber.Name = "btnGenerateNumber";
+            this.btnGenerateNumber.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnGenerateNumber.Size = new System.Drawing.Size(229, 42);
+            this.btnGenerateNumber.TabIndex = 2;
+            this.btnGenerateNumber.Text = "        Random Numbers";
+            this.btnGenerateNumber.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGenerateNumber.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnGenerateNumber.UseVisualStyleBackColor = true;
+            this.btnGenerateNumber.Click += new System.EventHandler(this.btnGenerateNumber_Click);
+            // 
+            // BtnRandomizer
+            // 
+            this.BtnRandomizer.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnRandomizer.FlatAppearance.BorderSize = 0;
+            this.BtnRandomizer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnRandomizer.ForeColor = System.Drawing.Color.LightGray;
+            this.BtnRandomizer.Image = global::DiceRoller_Randomizer.Properties.Resources.card_random__1_;
+            this.BtnRandomizer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnRandomizer.Location = new System.Drawing.Point(0, 40);
+            this.BtnRandomizer.Name = "BtnRandomizer";
+            this.BtnRandomizer.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.BtnRandomizer.Size = new System.Drawing.Size(229, 40);
+            this.BtnRandomizer.TabIndex = 1;
+            this.BtnRandomizer.Text = "        Randomizer";
+            this.BtnRandomizer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnRandomizer.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnRandomizer.UseVisualStyleBackColor = true;
+            this.BtnRandomizer.Click += new System.EventHandler(this.BtnRandomizer_Click);
+            // 
+            // btnRollBasicDice
+            // 
+            this.btnRollBasicDice.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnRollBasicDice.FlatAppearance.BorderSize = 0;
+            this.btnRollBasicDice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRollBasicDice.ForeColor = System.Drawing.Color.LightGray;
+            this.btnRollBasicDice.Image = global::DiceRoller_Randomizer.Properties.Resources.RollDiceCup;
+            this.btnRollBasicDice.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRollBasicDice.Location = new System.Drawing.Point(0, 0);
+            this.btnRollBasicDice.Name = "btnRollBasicDice";
+            this.btnRollBasicDice.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnRollBasicDice.Size = new System.Drawing.Size(229, 40);
+            this.btnRollBasicDice.TabIndex = 0;
+            this.btnRollBasicDice.Text = "       Roll Basic Dice";
+            this.btnRollBasicDice.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRollBasicDice.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnRollBasicDice.UseVisualStyleBackColor = true;
+            this.btnRollBasicDice.Click += new System.EventHandler(this.btnRollBasicDice_Click);
+            // 
+            // btnCreate
+            // 
+            this.btnCreate.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCreate.FlatAppearance.BorderSize = 0;
+            this.btnCreate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCreate.Font = new System.Drawing.Font("MV Boli", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCreate.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnCreate.Image = global::DiceRoller_Randomizer.Properties.Resources.createDices;
+            this.btnCreate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCreate.Location = new System.Drawing.Point(0, 425);
+            this.btnCreate.Name = "btnCreate";
+            this.btnCreate.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnCreate.Size = new System.Drawing.Size(229, 45);
+            this.btnCreate.TabIndex = 3;
+            this.btnCreate.Text = "   Create";
+            this.btnCreate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCreate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCreate.UseVisualStyleBackColor = true;
+            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
+            // 
             // btnDndDices
             // 
             this.btnDndDices.Dock = System.Windows.Forms.DockStyle.Top;
@@ -400,16 +389,16 @@
             this.btnDndDices.UseVisualStyleBackColor = true;
             this.btnDndDices.Click += new System.EventHandler(this.btnDndDices_Click);
             // 
-            // pictureBox2
+            // panelContent
             // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox2.Image = global::DiceRoller_Randomizer.Properties.Resources.logo;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(214, 45);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
+            this.panelContent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.panelContent.Controls.Add(this.btnInfo);
+            this.panelContent.Controls.Add(this.pictureBox1);
+            this.panelContent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContent.Location = new System.Drawing.Point(250, 0);
+            this.panelContent.Name = "panelContent";
+            this.panelContent.Size = new System.Drawing.Size(682, 553);
+            this.panelContent.TabIndex = 2;
             // 
             // btnInfo
             // 
@@ -424,7 +413,18 @@
             this.btnInfo.UseVisualStyleBackColor = true;
             this.btnInfo.Click += new System.EventHandler(this.btnInfo_Click);
             // 
-            // Form1
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.Image = global::DiceRoller_Randomizer.Properties.Resources.gifLogo;
+            this.pictureBox1.Location = new System.Drawing.Point(170, 159);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(341, 235);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -435,17 +435,17 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimumSize = new System.Drawing.Size(950, 600);
-            this.Name = "Form1";
+            this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dice Roller - Randomizer";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panelLogo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panelDnDDicesSubMenu.ResumeLayout(false);
             this.panelSideMenu.ResumeLayout(false);
             this.panelCreateSubMenu.ResumeLayout(false);
             this.panelContent.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
