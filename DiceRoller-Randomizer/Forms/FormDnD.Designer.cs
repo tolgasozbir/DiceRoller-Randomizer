@@ -121,6 +121,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Image = global::DiceRoller_Randomizer.Properties.Resources.multiply_28px;
             this.pictureBox2.Location = new System.Drawing.Point(12, 12);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(72, 72);
@@ -135,6 +136,7 @@
             this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnReset.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnReset.Image = global::DiceRoller_Randomizer.Properties.Resources.multiply_28px;
             this.btnReset.Location = new System.Drawing.Point(236, 323);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(192, 50);
@@ -148,6 +150,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Image = global::DiceRoller_Randomizer.Properties.Resources.logo;
             this.pictureBox1.Location = new System.Drawing.Point(236, 37);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(192, 192);
@@ -161,6 +164,7 @@
             this.btnRoll.BackColor = System.Drawing.Color.DarkOrange;
             this.btnRoll.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnRoll.ForeColor = System.Drawing.Color.White;
+            this.btnRoll.Image = global::DiceRoller_Randomizer.Properties.Resources.reset_28px;
             this.btnRoll.Location = new System.Drawing.Point(236, 262);
             this.btnRoll.Name = "btnRoll";
             this.btnRoll.Size = new System.Drawing.Size(192, 50);
