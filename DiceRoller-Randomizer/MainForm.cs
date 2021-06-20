@@ -21,7 +21,76 @@ namespace DiceRoller_Randomizer
         private void Form1_Load(object sender, EventArgs e)
         {
             customizeDesign();
+            
+            //for effectives titles
+            for (int i = 0; i < title.Length; i++)
+            {
+                chars.Add(title[i]);
+            }
         }
+
+
+        #region EffectivesLabelName
+        
+        
+        string title = "Dice Roller - Randomizer";
+        List<char> chars = new List<char>();
+
+        Random rnd = new Random();
+
+        string effecttedTitle;
+        int counter = 0;
+        int increment = 1;
+        bool wait = false;
+        int waitSecond = 0;
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (!wait)
+            {
+                effecttedTitle = "";
+                for (int i = 0; i < increment; i++)
+                {
+                    effecttedTitle += chars[i] = title[i];
+                }
+
+                for (int i = 0 + increment; i < chars.Count; i++)
+                {
+                    chars[i] = (char)rnd.Next('A', 'Z');
+                    effecttedTitle += chars[i];
+                }
+                lblTitle.Text = effecttedTitle;
+                counter++;
+                if (counter == 10)
+                {
+                    if (increment == title.Length)
+                    {
+                        increment = 0;
+                        wait = true;
+                    }
+                    counter = 0;
+                    effecttedTitle = chars[increment].ToString() + title[increment].ToString();
+                    increment++;
+                    timer1.Interval -= 2;
+                }
+            }
+            else
+            {
+                timer1.Interval = 1000;
+                waitSecond++;
+                if (waitSecond==10)
+                {
+                    waitSecond = 0;
+                    wait = false;
+                    timer1.Interval = 50;
+                    increment = 1;
+                }
+            }
+
+        }
+
+        #endregion
+
+        #region Design
 
         private void customizeDesign()
         {
@@ -64,6 +133,8 @@ namespace DiceRoller_Randomizer
                 frm.BringToFront();
                 frm.Show();
         }
+
+        #endregion
 
         #region DndDices
         private void btnDndDices_Click(object sender, EventArgs e)
@@ -188,5 +259,8 @@ namespace DiceRoller_Randomizer
         {
             MessageBox.Show("Thx For Using This App\n\nTolga Sözbir.","They See Me Rollin..");
         }
+
+
+
     }
 }
